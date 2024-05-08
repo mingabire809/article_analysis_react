@@ -8,6 +8,10 @@ export const Content = styled.div`
      h1{
         font-weight: 400;
     }
+     p{
+        font-weight: 400;
+        line-height: 30px;
+     }
 
     padding: 40px;
 
@@ -17,6 +21,15 @@ export const Content = styled.div`
 export const DataContent = styled.div`
     display: flex;
     min-height: 200px;
+`;
+
+export const ResponseContentData = styled.div`
+    display: flex;
+    align-items: center;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+   
 `;
 
 export const ResponseContent = styled.div`

@@ -49,6 +49,7 @@ const Home = ()=>{
         <Wrapper>
             <Content>
                      <h1>{data?.title}</h1>
+                      <p>{data?.summary}</p>
                 <DataContent>
 
                     {data===''? null: <ResponseContent>
@@ -63,10 +64,10 @@ const Home = ()=>{
                    
 
                 <Image src={data?.image}/>
+               
                 </DataContent>
 
                 
-
                 <InputContent>
                     <Input value={url} onChange={(e)=>setUrl(e.target.value)} type="text" placeholder="Paste the url link of the article to analyze"/>
                     <Button onClick={analyze}>Analyse</Button>
